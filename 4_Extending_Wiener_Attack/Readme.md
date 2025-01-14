@@ -1,0 +1,1 @@
+# Résumé du théorème de Legendre et idées pour l'appliquer  
