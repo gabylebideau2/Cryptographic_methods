@@ -17,3 +17,8 @@ Ce dossier contient l'application de l'attaque de Wiener sur des cl√©s RSA vuln√
 1. **Lancer l'attaque :**  
    ```bash
    python factorization_script.py
+
+### Sage  
+1. **Lancer l'attaque :**  
+   ```bash
+   sage sage_wiener.sage
