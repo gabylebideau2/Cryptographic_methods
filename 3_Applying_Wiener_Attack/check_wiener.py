@@ -68,4 +68,4 @@ def main(input_file):
             print(f"Pair {idx}: Failed to verify d={d} for e={e}, n={n}")
 
 if __name__ == "__main__":
-    main("cracked_keys_d.txt")
+    main("results_second_batch.txt")

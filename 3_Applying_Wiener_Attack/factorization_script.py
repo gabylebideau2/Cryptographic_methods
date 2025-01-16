@@ -1,8 +1,8 @@
 from wiener_attack_v2 import *
 from math import isqrt
 
-input_file = "integers_to_factorize.txt"  
-output_file = "cracked_keys_d.txt"
+input_file = "integers_to_factorize2.txt"  
+output_file = "results_second_batch.txt"
 
 rsa_pairs = []
 with open(input_file, "r") as infile:
@@ -46,7 +46,8 @@ def find_p_q(n, e, d):
 # Open output file for writing results
 with open(output_file, "w") as outfile:
     for idx, (e, n) in enumerate(rsa_pairs, start=1):
-        d = find_private_key(e, n)
+        d = find_private_key_de_weger(e, n)
+
         
        # if d is None:
           #  result = f"Pair {idx}: Failed to find d for e={e}, n={n}\n"
