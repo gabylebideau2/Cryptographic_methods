@@ -111,17 +111,7 @@ def read_file(filename):
 
 
 def parse_input(data):
-    """
-    Exemple de parsing: on recherche des lignes du type:
-      N1=1234
-      e1=5678
-      N2=...
-      e2=...
-    Renvoie une liste de tuples (N, e).
-    """
     pairs = re.findall(r"N(\d+)=(\d+)\s+e(\d+)=(\d+)", data)
-    # pairs est une liste de tuples ( '1','1234','1','5678' ), etc.
-    # On ne garde que (N, e) convertis en int
     return [(int(n), int(e)) for _, n, _, e in pairs]
 
 
@@ -139,7 +129,7 @@ def main():
             p, q, d = result
             print(f"[Case {i}] Found factors p = {p}, q = {q}, and private key d = {d}")
         else:
-            print(f"[Case {i}] de Weger attack failed to find factors.")
+            print(f"[Case {i}]  failed to find factors.")
 
 
 if __name__ == "__main__":
